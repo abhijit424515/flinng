@@ -1,4 +1,4 @@
-#include "MurmurHash3.h"
+#include "mmh.h"
 
 inline uint32_t rotl32(uint32_t x, int8_t r) {
   return (x << r) | (x >> (32 - r));

@@ -1,6 +1,6 @@
 #include "FLINNG.h"
-#include "MurmurHash3.h"
 #include "benchmarking.h"
+#include "mmh.h"
 #include <algorithm>
 #include <bitset>
 #include <chrono>
