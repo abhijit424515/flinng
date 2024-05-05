@@ -7,7 +7,6 @@ perf.*
 *.data
 *.out
 *.bin
-*.png
 .vscode/
 
 data/genomes/data
