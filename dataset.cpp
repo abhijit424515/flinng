@@ -101,7 +101,11 @@ bool load_vector_from_stream_int(std::istream &in, std::vector<size_t> &vec,
   while (getline(ss, buff, ' ')) {
     ret = true;
     if (i != 0) {
-      vec.push_back(stoul(buff));
+      try {
+        vec.push_back(stoul(buff));
+      } catch (...) {
+        break;
+      }
     } else {
       *first = stoul(buff);
     }
